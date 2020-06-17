@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="256" id="KGk-i7-Jjw" customClass="DataTableViewCell" customModule="LearnCoreData" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="256"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="256"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEc-wH-O2k">
+                        <rect key="frame" x="16" y="64" width="130" height="128"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YS1-zo-gXq">
+                        <rect key="frame" x="166" y="64" width="240" height="128"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQc-Cx-IDZ">
+                        <rect key="frame" x="166" y="10" width="240" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IQc-Cx-IDZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.536913" id="2IU-ga-u1i"/>
+                    <constraint firstItem="IQc-Cx-IDZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Fbx-PH-Vyx"/>
+                    <constraint firstItem="YS1-zo-gXq" firstAttribute="centerY" secondItem="tEc-wH-O2k" secondAttribute="centerY" id="Ixe-YT-qwy"/>
+                    <constraint firstAttribute="trailing" secondItem="IQc-Cx-IDZ" secondAttribute="trailing" constant="41" id="RMa-kr-fth"/>
+                    <constraint firstItem="YS1-zo-gXq" firstAttribute="leading" secondItem="tEc-wH-O2k" secondAttribute="trailing" constant="20" id="ReC-2j-eUn"/>
+                    <constraint firstItem="tEc-wH-O2k" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="Tqt-or-lat"/>
+                    <constraint firstItem="tEc-wH-O2k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="VUG-UH-P0z"/>
+                    <constraint firstItem="YS1-zo-gXq" firstAttribute="width" secondItem="tEc-wH-O2k" secondAttribute="width" multiplier="1.84615" id="Wih-Ro-aBQ"/>
+                    <constraint firstItem="YS1-zo-gXq" firstAttribute="height" secondItem="tEc-wH-O2k" secondAttribute="height" id="ZLp-qr-row"/>
+                    <constraint firstItem="tEc-wH-O2k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fvS-IU-qXN"/>
+                    <constraint firstItem="tEc-wH-O2k" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.290828" id="gzG-1K-Ygl"/>
+                    <constraint firstItem="IQc-Cx-IDZ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.179688" id="w3n-Vf-OQO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="content" destination="YS1-zo-gXq" id="zFi-Il-Oht"/>
+                <outlet property="name" destination="tEc-wH-O2k" id="eRo-Jm-6OX"/>
+                <outlet property="time" destination="IQc-Cx-IDZ" id="OFz-rn-Bi8"/>
+            </connections>
+            <point key="canvasLocation" x="229.71014492753625" y="223.66071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

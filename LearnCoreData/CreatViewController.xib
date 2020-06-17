@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatViewController" customModule="LearnCoreData" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTextView" destination="aNa-gX-846" id="AXT-Hl-6bG"/>
+                <outlet property="edit" destination="TT8-o4-Pe1" id="jsJ-yG-I2i"/>
+                <outlet property="namtextField" destination="Jhr-eP-YR1" id="0Ui-Y4-zK1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jhr-eP-YR1">
+                    <rect key="frame" x="72" y="171" width="270" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-gX-846">
+                    <rect key="frame" x="69" y="255" width="276" height="197"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT8-o4-Pe1">
+                    <rect key="frame" x="135" y="512" width="144" height="58"/>
+                    <color key="backgroundColor" red="1" green="0.77828631869999998" blue="0.43187587119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Edit ">
+                        <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="editAction:" destination="-1" eventType="touchUpInside" id="d0w-z0-JjB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jhr-eP-YR1" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.0772947" constant="238" id="2L7-gt-kZ9"/>
+                <constraint firstItem="TT8-o4-Pe1" firstAttribute="centerX" secondItem="aNa-gX-846" secondAttribute="centerX" id="9xM-Du-Ajd"/>
+                <constraint firstItem="aNa-gX-846" firstAttribute="centerX" secondItem="Jhr-eP-YR1" secondAttribute="centerX" id="BMX-xs-rWd"/>
+                <constraint firstItem="aNa-gX-846" firstAttribute="height" secondItem="Jhr-eP-YR1" secondAttribute="height" multiplier="5.79412" id="CdY-bA-kAb"/>
+                <constraint firstItem="TT8-o4-Pe1" firstAttribute="top" secondItem="aNa-gX-846" secondAttribute="bottom" constant="60" id="QAm-Aa-jxr"/>
+                <constraint firstItem="Jhr-eP-YR1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="127" id="RNg-ph-omb"/>
+                <constraint firstItem="TT8-o4-Pe1" firstAttribute="width" secondItem="aNa-gX-846" secondAttribute="width" multiplier="0.521739" id="S7E-FR-PZp"/>
+                <constraint firstItem="aNa-gX-846" firstAttribute="width" secondItem="Jhr-eP-YR1" secondAttribute="width" multiplier="1.02222" id="aug-1e-RVv"/>
+                <constraint firstItem="Jhr-eP-YR1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fea-KU-wEW"/>
+                <constraint firstItem="Jhr-eP-YR1" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0379464" id="mF0-xK-cRZ"/>
+                <constraint firstItem="aNa-gX-846" firstAttribute="top" secondItem="Jhr-eP-YR1" secondAttribute="bottom" constant="50" id="qto-ow-S7t"/>
+                <constraint firstItem="TT8-o4-Pe1" firstAttribute="height" secondItem="aNa-gX-846" secondAttribute="height" multiplier="0.294416" id="yAF-sl-d6B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>
